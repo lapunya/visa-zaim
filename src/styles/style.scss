@@ -54,12 +54,8 @@ body {
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-}
-p {
+h1,h2,h3,h4,h5,h6,p {
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
@@ -71,11 +67,13 @@ ul,li {
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2px;
 }
 
 @import './src/blocks/logo/logo';
 @import './src/blocks/header/header';
+@import './src/blocks/ways/ways';
+@import './src/blocks/simplicity/simplicity';
 
