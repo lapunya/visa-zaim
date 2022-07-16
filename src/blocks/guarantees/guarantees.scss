@@ -1,0 +1,85 @@
+.guarantees {
+    background-color: #F2F6FD;
+
+    &__container {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        color: #8C8E9B;
+        margin-bottom: 12px;
+    }
+
+    &__main-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 44px;
+    }
+
+    &__text-box {
+        width: 49%;
+        max-width: 636px;
+    }
+
+    &__note {
+        display: block;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        color: #0F0E42;
+        margin-bottom: 18px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #0F0E42;
+    }
+
+    &__list {
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 33.3%;
+    }
+
+    &__value {
+        display: block;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        color: #07317E;
+        margin-bottom: 8px;
+    }
+
+    &__step {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        color: #08327F;
+    }
+
+    &__button {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: #0F0E42;
+        padding: 19px 94px;
+        background: #FCC01A;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #FFD359;
+        }
+    }
+}

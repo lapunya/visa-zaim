@@ -1,0 +1,52 @@
+.footer {
+    background-color: #0F0E42;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    &__logo {
+        width: 164px;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+
+    &__cooperation {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    &__line {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+}
