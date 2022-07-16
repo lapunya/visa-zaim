@@ -1,0 +1,106 @@
+.intro {
+    background: linear-gradient(90deg, #07317E 0%, #1146A6 100%);
+
+    &__container {
+        padding: 56px 86px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }
+
+    &__note {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 58px;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 1124px;
+        background: #F2F6FD;
+        border-radius: 5px;
+        padding: 36px 24px;
+        margin: 0 auto;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: #0F0E42;
+
+        &--sum {
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+
+    &__input {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 25px;
+        color: #2C2C2C;
+        padding: 15px;
+        background: #FFFFFF;
+        border: 1px solid #CED6E4;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+
+        &--sum {
+            width: auto;
+        }
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #8C8E9B;
+        }
+    }
+
+    &__input-wrapper {
+        width: 33.3%;
+        max-width: 340px;
+    }
+
+    &__button {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: #0F0E42;
+        padding: 19px 92px;
+        margin-bottom: 8px;
+        background: #FCC01A;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #FFD359;
+        }
+    }
+
+    &__security {
+        display: block;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 120%;
+        color: #0F0E42;
+        text-align: center;
+
+    }
+}
