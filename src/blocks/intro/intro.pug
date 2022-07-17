@@ -7,11 +7,11 @@ mixin intro()
             .intro__box
                 label(for="requiredSum").intro__label.intro__label--sum Необходимая сумма, ₽
                 input(type="number" id="requiredSum" min="1000" max="100000").intro__input.intro__input--sum
-            .intro__box.intro__box--range
+            .intro__box
                 input(type="range" value="50").intro__range-track
                 span.intro__range-value 1 000 ₽
-                span.intro__range-value 100 000 ₽
-            .intro__box  
+                span.intro__range-value.intro__range-value--max 100 000 ₽
+            .intro__box.intro__box--data  
                 .intro__input-wrapper
                     label(for="userName").intro__label ФИО
                     input(type="text" id="userName" placeholder="Иванов Пётр Михайлович").intro__input
@@ -21,6 +21,6 @@ mixin intro()
                 .intro__input-wrapper.intro__input-wrapper--button    
                     button(type="submit").intro__button Получить деньги 
                     span.intro__security Высокая степень безопасности данных
-            .intro__box.intro__box--conditions  
-                span.intro__condition Вероятность одобрения: <b>87%</b>
-                span.intro__condition.intro__condition--percent Первый займ: <b>0%</b>
+            .intro__box.intro__box--conditions
+                span.intro__condition-text Вероятность одобрения: <b>87%</b>
+                span.intro__condition-text.intro__condition-text--percent Первый займ: <b>0%</b>

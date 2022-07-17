@@ -4,6 +4,11 @@
     &__container {
         padding-top: 64px;
         padding-bottom: 64px;
+
+        @include mobile {
+            padding-top: 44px;
+            padding-bottom: 44px;
+        }
     }
 
     &__title {
@@ -12,17 +17,34 @@
         line-height: 120%;
         color: #8C8E9B;
         margin-bottom: 12px;
+
+        @include mobile {
+            font-size: 18px;
+            line-height: 140%;
+            margin-bottom: 8px;
+        }
     }
 
     &__main-content {
         display: flex;
         justify-content: space-between;
         margin-bottom: 44px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 48px;
+        }
     }
 
     &__text-box {
         width: 49%;
         max-width: 636px;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
 
     &__note {
@@ -32,6 +54,15 @@
         line-height: 120%;
         color: #0F0E42;
         margin-bottom: 18px;
+
+        @include tablet {
+            font-size: calc((100vw - 375px)/(1280 - 375) * (40 - 28) + 28px);
+        }
+
+        @include mobile {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
     }
 
     &__description {
@@ -45,10 +76,25 @@
         width: 49%;
         display: flex;
         justify-content: space-between;
+
+        @include mobile {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__item {
         width: 33.3%;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 29px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__value {
@@ -58,6 +104,10 @@
         line-height: 120%;
         color: #07317E;
         margin-bottom: 8px;
+
+        @include mobile {
+            margin-bottom: 4px;
+        }
     }
 
     &__step {
@@ -82,6 +132,10 @@
 
         &:hover {
             background-color: #FFD359;
+        }
+
+        @include mobile {
+            padding: 17px;
         }
     }
 }

@@ -15,6 +15,10 @@
         line-height: 120%;
         color: #FFFFFF;
         margin-bottom: 8px;
+
+        @include tablet {
+            font-size: calc((100vw - 375px)/(1280 - 375) * (48 - 32) + 32px);
+        }
     }
 
     &__note {
@@ -24,6 +28,14 @@
         line-height: 140%;
         color: #FFFFFF;
         margin-bottom: 58px;
+
+        @include tablet {
+            font-size: calc((100vw - 375px)/(1280 - 375) * (28 - 18) + 18px);
+        }
+
+        @include mobile {
+            margin-bottom: 26px;
+        }
     }
 
     &__form {
@@ -31,23 +43,48 @@
         max-width: 1124px;
         background: #F2F6FD;
         border-radius: 5px;
-        padding: 36px 24px 18px;
+        padding: 36px 24px 44px;
         margin: 0 auto;
+
+        @include tablet {
+            max-width: 900px;
+        }
+
+        @include mobile {
+            padding: 20px 16px 24px;
+        }
     }
 
     &__box {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 26px;
+        flex-wrap: wrap;
 
-        &--conditions {
-            justify-content: flex-start;
-            margin-bottom: 10px;
+        &--data {
+            justify-content: space-between;
+
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include mobile {
+                margin-bottom: 0;
+            }
         }
 
-        &--range {
-            flex-wrap: wrap;
+        @include mobile {
+            align-items: center;
+        }
+
+        &--conditions {
+            margin-bottom: 0;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 
@@ -60,6 +97,10 @@
         &--sum {
             font-weight: 400;
             font-size: 22px;
+
+            @include tablet {
+                font-size: calc((100vw - 375px)/(1280 - 375) * (22 - 16) + 16px);
+            }
         }
     }
 
@@ -78,10 +119,15 @@
         &--sum {
             width: auto;
             padding: 10px;
+            margin-left: auto;
             font-weight: 600;
             font-size: 24px;
             line-height: 120%;
             color: #2C2C2C;
+
+            @include mobile {
+                max-width: 112px;
+            }
         }
 
         &::placeholder {
@@ -96,12 +142,17 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 33.3%;
+        width: 33%;
         max-width: 340px;
 
         &--button {
             align-items: center;
-            padding-top: 26px;
+            padding-top: 20px;
+        }
+
+        @include tablet {
+            width: 100%;
+            max-width: none;
         }
     }
 
@@ -111,7 +162,7 @@
         font-size: 18px;
         line-height: 120%;
         color: #0F0E42;
-        padding: 19px 60px;
+        padding: 18px 60px;
         margin-bottom: 8px;
         background: #FCC01A;
         border: none;
@@ -120,6 +171,10 @@
 
         &:hover {
             background-color: #FFD359;
+        }
+
+        @include mobile {
+            padding: 17px;
         }
     }
 
@@ -145,7 +200,7 @@
         }
     }
 
-    &__condition {
+    &__condition-text {
         font-weight: 400;
         font-size: 18px;
         line-height: 140%;
@@ -157,10 +212,10 @@
         &:before {
             content: '';
             position: absolute;
-            top: -3px;
+            top: -1px;
             left: 0;
-            width: 29px;
-            height: 29px;
+            width: 27px;
+            height: 27px;
             background: url('../img/intro-check.svg') no-repeat center;
             background-size: 27px 27px;
         }
@@ -210,5 +265,14 @@
         font-size: 18px;
         line-height: 140%;
         color: #8C8E9B;
+
+        &--max {
+            margin-left: auto;
+        }
+
+        @include mobile {
+            font-size: 16px;
+            line-height: 160%;
+        }
     }
 }

@@ -4,6 +4,10 @@
     &__container {
         padding-top: 28px;
         padding-bottom: 64px;
+
+        @include mobile {
+            padding-top: 16px;
+        }
     }
 
     &__text-box {
@@ -14,6 +18,11 @@
         background: #FFFFFF;
         border-radius: 5px;
         margin-bottom: 40px;
+
+        @include mobile {
+            padding: 20px 16px;
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
@@ -22,6 +31,14 @@
         line-height: 120%;
         color: #0F0E42;
         margin-bottom: 12px;
+
+        @include tablet {
+            font-size: calc((100vw - 375px)/(1280 - 375) * (32 - 22) + 22px);
+        }
+
+        @include mobile {
+            font-size: 22px;
+        }
     }
 
     &__description {
@@ -30,6 +47,11 @@
         line-height: 140%;
         color: #2C2C2C;
         margin-bottom: 24px;
+
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 
     &__sent {
@@ -37,6 +59,11 @@
         font-size: 24px;
         line-height: 120%;
         color: #1146A6;
+
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
     }
 
     &__list {
@@ -67,6 +94,7 @@
 
         @include mobile {
             width: 49%;
+            margin-bottom: 20px;
         }
     }
 
@@ -75,6 +103,10 @@
         width: 120px;
         height: 56px;
         margin-bottom: 8px;
+
+        @include mobile {
+            margin-bottom: 4px;
+        }
     }
 
     &__feature {
@@ -96,6 +128,10 @@
         background-color: #CED6E4;
         border: none;
         margin: 0 auto 12px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__availability-box {
@@ -103,6 +139,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
 
     &__availability-text {
@@ -139,7 +179,8 @@
         }
 
         @include mobile {
-            padding: 17px 7px
+            padding: 17px 7px;
+            font-size: 17px;
         }
     }
 }
