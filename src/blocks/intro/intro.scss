@@ -34,6 +34,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 30px;
+
+        &--conditions {
+            justify-content: flex-start;
+        }
     }
 
     &__label {
@@ -102,5 +107,55 @@
         color: #0F0E42;
         text-align: center;
 
+    }
+
+    &__condition {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #0F0E42;
+        padding-left: 48px;
+        position: relative;
+        margin-right: 46px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 29px;
+            height: 29px;
+            background: url('../img/intro-check.svg') no-repeat center;
+            background-size: 27px 27px;
+        }
+
+        &--percent:before {
+            background-image: url('../img/intro-percent.svg');
+        }
+    }
+
+    &__range {
+        background: linear-gradient(to right, #1146A6 0%, #1146A6 50%, #fff 50%, #fff 100%);
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            margin-top: -13px;
+            width: 36px;
+            height: 36px;
+            border: 0;
+            background: transparent url('../img/intro-slider.svg') no-repeat center;
+            background-size: 36px 36px;
+            cursor: pointer;
+        }
+
+        &::-webkit-slider-runnable-track {
+            border: 1px solid #CED6E4;
+            height: 8px;
+            border-radius: 3px;
+        }
     }
 }
