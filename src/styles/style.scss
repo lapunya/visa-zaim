@@ -1,6 +1,22 @@
 $mainText: #000000;
 $secondText: #ffffff;
 
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// MEDIA
+@mixin tablet {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
 @font-face {
   font-family: 'Manrope';
   src: url('../fonts/Manrope-Light.woff2') format('woff2'),
@@ -14,6 +30,14 @@ $secondText: #ffffff;
   src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
         url('../fonts/Manrope-Regular.woff') format('woff');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -33,14 +57,12 @@ $secondText: #ffffff;
   font-style: normal;
 }
 
-
-
-
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -64,12 +86,18 @@ ul,li {
   margin: 0;
   list-style: none;
 }
-
+a, button {
+  font-family: 'Manrope', sans-serif;
+}
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1326px;
   margin: 0 auto;
-  padding: 0 2px;
+  padding: 0 15px;
+
+  @include mobile {
+    padding: 0 15px;
+  }
 }
 
 .visually-hidden {
@@ -93,6 +121,7 @@ ul,li {
 @import './src/blocks/guarantees/guarantees';
 @import './src/blocks/simplicity/simplicity';
 @import './src/blocks/about/about';
+@import './src/blocks/agreement/agreement';
 @import './src/blocks/footer/footer';
 
 

@@ -68,11 +68,13 @@
     }
 
     &__button {
+        width: 100%;
+        max-width: 340px;
         font-weight: 600;
         font-size: 18px;
         line-height: 120%;
         color: #0F0E42;
-        padding: 19px 94px;
+        padding: 19px 60px;
         background: #FCC01A;
         border: none;
         border-radius: 5px;

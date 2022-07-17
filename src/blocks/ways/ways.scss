@@ -19,7 +19,7 @@
         font-size: 40px;
         line-height: 120%;
         color: #0F0E42;
-        margin-bottom: 68px;
+        margin-bottom: 55px;
     }
 
     &__list {
@@ -29,6 +29,7 @@
 
     &__item {
         display: flex;
+        align-items: center;
         width: 33.3%;
         max-width: 416px;
     }

@@ -2,7 +2,11 @@
     background: linear-gradient(90deg, #07317E 0%, #1146A6 100%);
 
     &__container {
-        padding: 56px 86px;
+        padding: 56px 102px;
+
+        @include mobile {
+            padding: 28px 15px 48px;
+        }
     }
 
     &__title {
@@ -14,6 +18,7 @@
     }
 
     &__note {
+        display: block;
         font-weight: 400;
         font-size: 28px;
         line-height: 140%;
@@ -26,18 +31,23 @@
         max-width: 1124px;
         background: #F2F6FD;
         border-radius: 5px;
-        padding: 36px 24px;
+        padding: 36px 24px 18px;
         margin: 0 auto;
     }
 
     &__box {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
+        align-items: flex-start;
+        margin-bottom: 26px;
 
         &--conditions {
             justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+
+        &--range {
+            flex-wrap: wrap;
         }
     }
 
@@ -55,7 +65,7 @@
 
     &__input {
         font-weight: 600;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 25px;
         color: #2C2C2C;
         padding: 15px;
@@ -67,6 +77,11 @@
 
         &--sum {
             width: auto;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            color: #2C2C2C;
         }
 
         &::placeholder {
@@ -78,16 +93,25 @@
     }
 
     &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 33.3%;
         max-width: 340px;
+
+        &--button {
+            align-items: center;
+            padding-top: 26px;
+        }
     }
 
     &__button {
+        width: 100%;
         font-weight: 600;
         font-size: 18px;
         line-height: 120%;
         color: #0F0E42;
-        padding: 19px 92px;
+        padding: 19px 60px;
         margin-bottom: 8px;
         background: #FCC01A;
         border: none;
@@ -106,7 +130,19 @@
         line-height: 120%;
         color: #0F0E42;
         text-align: center;
+        padding-left: 26px;
+        position: relative;
 
+        &:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 0;
+            left: 0;
+            background: url('../img/intro-lock.svg') no-repeat center;
+            background-size: contain;
+        }
     }
 
     &__condition {
@@ -114,9 +150,9 @@
         font-size: 18px;
         line-height: 140%;
         color: #0F0E42;
-        padding-left: 48px;
+        padding-left: 47px;
         position: relative;
-        margin-right: 46px;
+        margin-right: 41px;
 
         &:before {
             content: '';
@@ -132,23 +168,33 @@
         &--percent:before {
             background-image: url('../img/intro-percent.svg');
         }
+
+        b {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #1146A6;
+        }
     }
 
-    &__range {
+    &__range-track {
         background: linear-gradient(to right, #1146A6 0%, #1146A6 50%, #fff 50%, #fff 100%);
         -webkit-appearance: none;
         appearance: none;
+        display: block;
         width: 100%;
+        border-radius: 6px;
+        margin-bottom: 23px;
 
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            margin-top: -13px;
-            width: 36px;
-            height: 36px;
+            margin-top: -20px;
+            width: 55px;
+            height: 55px;
             border: 0;
             background: transparent url('../img/intro-slider.svg') no-repeat center;
-            background-size: 36px 36px;
+            background-size: contain;
             cursor: pointer;
         }
 
@@ -157,5 +203,12 @@
             height: 8px;
             border-radius: 3px;
         }
+    }
+
+    &__range-value {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #8C8E9B;
     }
 }
