@@ -11,11 +11,27 @@
         padding: 10px 15px;
     }
 
-    &__logo {
+    &__main-link {
+        display: block;
         width: 164px;
 
         @include mobile {
             width: 144px;
+        }
+    }
+
+    &__blog-link {
+        display: none;
+        margin-left: auto;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #08327F;
+
+        @include mobile {
+            color: #3F5E98;
         }
     }
 }

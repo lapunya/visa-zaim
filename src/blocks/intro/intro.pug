@@ -1,23 +1,24 @@
 mixin intro()
   section.intro 
     .intro__container.container
+        h1.visually-hidden Виза займ
         h2.intro__title Займ до 100 000 ₽ 
         span.intro__note на карту или наличными за 10 минут
-        form(action="").intro__form
+        form(action="").intro__form#intro-form
             .intro__box
                 label(for="requiredSum").intro__label.intro__label--sum Необходимая сумма, ₽
-                input(type="number" id="requiredSum" min="1000" max="100000").intro__input.intro__input--sum
+                input(type="number" name="Необходимая сумма" id="requiredSum" min="1000" max="100000" required).intro__input.intro__input--sum
             .intro__box
-                input(type="range" value="50").intro__range-track
+                input(type="range" min="1000" max="100000" value="30500").intro__range-track
                 span.intro__range-value 1 000 ₽
                 span.intro__range-value.intro__range-value--max 100 000 ₽
             .intro__box.intro__box--data  
                 .intro__input-wrapper
                     label(for="userName").intro__label ФИО
-                    input(type="text" id="userName" placeholder="Иванов Пётр Михайлович").intro__input
+                    input(type="text" name="ФИО" id="userName" placeholder="Иванов Пётр Михайлович" required).intro__input
                 .intro__input-wrapper
                     label(for="userTel").intro__label Телефон
-                    input(type="tel" id="userTel" placeholder="+7 (999) 999 99 99").intro__input
+                    input(type="tel" name="Номер телефона" id="userTel" placeholder="+7 (999) 999 99 99" required).intro__input
                 .intro__input-wrapper.intro__input-wrapper--button    
                     button(type="submit").intro__button Получить деньги 
                     span.intro__security Высокая степень безопасности данных

@@ -1,6 +1,3 @@
-$mainText: #000000;
-$secondText: #ffffff;
-
 $tablet-width: 768px;
 $desktop-width: 1280px;
 
@@ -67,7 +64,7 @@ body {
   padding: 0;
   background-color: white;
   font-family: 'Manrope', sans-serif;
-  color: $mainText;
+  color: #2C2C2C;
   font-size: rem(16);
   overflow-x: hidden;
 }

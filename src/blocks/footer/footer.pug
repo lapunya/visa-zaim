@@ -1,11 +1,11 @@
 mixin footer()
   footer.footer 
     .footer__container
-        .footer__logo
+        a(href="#").footer__main-link
             +logo
         h3.footer__title Сервис подбора займов
         span.footer__cooperation По вопросам сотрудничества: 
-            a(href="mailto:info@monebo.ru").footer__link info@monebo.ru
+            a(href="mailto:info@monebo.ru").footer__mail-link info@monebo.ru
         hr.footer__line
         p.footer__description 
             | Владельцем товарного знака "Monebo" является ИП Карсаков А.А. (ИНН 631929844543), услуги по размещению информации на домене Monebo.ru оказывает ООО «ГИДФИНАНС» 

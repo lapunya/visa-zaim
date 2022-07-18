@@ -1,4 +1,5 @@
-mixin header()
+mixin header(activePage)
   header.header 
-    .header__logo
+    a(href=(activePage === 'main' ? null : 'main.html')).header__main-link
       +logo
+    a(href="#").header__blog-link Блог
