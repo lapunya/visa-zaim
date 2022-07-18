@@ -17,7 +17,7 @@
       this.style = getRangeFillValue(this.value);
       output.value = this.value;
     });
-    output.addEventListener('input', function () {
+    output.addEventListener('change', function () {
       if (this.value < +this.min) {
         this.value = this.min;
       }
@@ -27,6 +27,15 @@
       }
 
       range.value = this.value;
+      range.style = getRangeFillValue(this.value);
+    });
+    output.addEventListener('input', function () {
+      if (this.value == '') {
+        range.value = this.min;
+      } else {
+        range.value = this.value;
+      }
+
       range.style = getRangeFillValue(this.value);
     });
   }
