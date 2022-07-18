@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="description" content="Виза займ. Займы до 100 000 рублей">
+    <meta name="Keywords" content="Займы, быстрые займы">
+  </head>
+  <body>
+      <header class="header"> <a class="header__main-link">
+            <div class="logo"><img class="logo__img" src="img/logo.svg" width="164" height="50" alt="Логотип Виза займ"></div></a><a class="header__blog-link" href="#">Блог</a><a class="header__index-link" href="index.html">Вернуться на стартовую страницу</a></header>
+      <section class="intro"> 
+        <div class="intro__container container">
+          <h1 class="visually-hidden">Виза займ</h1>
+          <h2 class="intro__title">Займ до 100 000 ₽ </h2><span class="intro__note">на карту или наличными за 10 минут</span>
+          <form class="intro__form" action="" id="intro-form">
+            <div class="intro__box">
+              <label class="intro__label intro__label--sum" for="requiredSum">Необходимая сумма, ₽</label>
+              <input class="intro__input intro__input--sum" type="number" name="Необходимая сумма" id="requiredSum" min="1000" max="100000" required>
+            </div>
+            <div class="intro__box">
+              <input class="intro__range-track" type="range" min="1000" max="100000" value="30500"><span class="intro__range-value">1 000 ₽</span><span class="intro__range-value intro__range-value--max">100 000 ₽</span>
+            </div>
+            <div class="intro__box intro__box--data"> 
+              <div class="intro__input-wrapper">
+                <label class="intro__label" for="userName">ФИО</label>
+                <input class="intro__input" type="text" name="ФИО" id="userName" placeholder="Иванов Пётр Михайлович" required>
+              </div>
+              <div class="intro__input-wrapper">
+                <label class="intro__label" for="userTel">Телефон</label>
+                <input class="intro__input" type="tel" name="Номер телефона" id="userTel" placeholder="+7 (999) 999 99 99" required>
+              </div>
+              <div class="intro__input-wrapper intro__input-wrapper--button">   
+                <button class="intro__button" type="submit">Получить деньги </button><span class="intro__security">Высокая степень безопасности данных</span>
+              </div>
+            </div>
+            <div class="intro__box intro__box--conditions"><span class="intro__condition-text">Вероятность одобрения: <b>87%</b></span><span class="intro__condition-text intro__condition-text--percent">Первый займ: <b>0%</b></span></div>
+          </form>
+        </div>
+      </section>
+      <section class="ways"> 
+        <div class="ways__container container">
+          <h2 class="ways__main-title">Способы получения</h2><span class="ways__note">Отправим вам деньги </span>
+          <ul class="ways__list"> 
+            <li class="ways__item"> <img class="ways__image" src="img/ways-card.png" width="120" height="120" alt="Деньги на карту">
+              <div class="ways__text-box"> 
+                <h3 class="ways__item-title">На карту</h3>
+                <p class="ways__description">Любой банк РФ: Visa, MasterCard, МИР </p>
+              </div>
+            </li>
+            <li class="ways__item"> <img class="ways__image" src="img/ways-online.png" width="120" height="120" alt="Деньги на онлайн кошелек">
+              <div class="ways__text-box"> 
+                <h3 class="ways__item-title">На онлайн кошелек</h3>
+                <p class="ways__description">Webmoney, QIWI, PAYEER </p>
+              </div>
+            </li>
+            <li class="ways__item"> <img class="ways__image" src="img/ways-cash.png" width="120" height="120" alt="Деньги наличными">
+              <div class="ways__text-box"> 
+                <h3 class="ways__item-title">Наличными</h3>
+                <p class="ways__description">В офисах наших партнеров во всех городах РФ </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="guarantees"> 
+        <div class="guarantees__container container">
+          <h2 class="guarantees__title">Гарантированные условия</h2>
+          <div class="guarantees__main-content">
+            <div class="guarantees__text-box"><span class="guarantees__note">Почему обращаются к нам? </span>
+              <p class="guarantees__description">Используем самые современные технологий информационной и технологической защиты. </p>
+            </div>
+            <ul class="guarantees__list">    
+              <li class="guarantees__item"><span class="guarantees__value">99%</span><span class="guarantees__step">одобрение</span></li>
+              <li class="guarantees__item"><span class="guarantees__value">10 мин </span><span class="guarantees__step">и деньги у вас</span></li>
+              <li class="guarantees__item"><span class="guarantees__value">0%</span><span class="guarantees__step">первый займ</span></li>
+            </ul>
+          </div>
+          <button class="guarantees__button">Получить деньги</button>
+        </div>
+      </section>
+      <section class="simplicity"> 
+        <div class="simplicity__container container">
+          <h2 class="simplicity__main-title">Получить деньги просто!</h2>
+          <ul class="simplicity__list"> 
+            <li class="simplicity__item"> <img class="simplicity__image" src="img/simplicity-form.png" width="120" height="120" alt="Заполнение анкеты">
+              <div class="simplicity__text-box">
+                <h3 class="simplicity__item-title"> <a class="simplicity__link" href="#intro-form">Заполните анкету</a></h3>
+                <p class="simplicity__description">Удобный интерфейс позволит быстро пройти процедуру заполнения </p><span class="simplicity__time">5 минут</span>
+              </div>
+            </li>
+            <li class="simplicity__item"> <img class="simplicity__image" src="img/simplicity-clock.png" width="120" height="120" alt="Ожидание">
+              <div class="simplicity__text-box">
+                <h3 class="simplicity__item-title">Дождитесь одобрения</h3>
+                <p class="simplicity__description">Рассмотрение заявки займёт не более 5 минут </p><span class="simplicity__time">2 минуты - среднее время</span>
+              </div>
+            </li>
+            <li class="simplicity__item"> <img class="simplicity__image" src="img/simplicity-money.png" width="120" height="120" alt="Получение денег">
+              <div class="simplicity__text-box">
+                <h3 class="simplicity__item-title">Получите деньги</h3>
+                <p class="simplicity__description">На банковскую карту, наличными или на электронный кошелек  </p><span class="simplicity__time">1 минута </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about"> 
+        <div class="about__container">
+          <div class="about__text-box"> 
+            <h3 class="about__title">Условия получения:</h3>
+            <ul class="about__list"> 
+              <li class="about__item"> 
+                <p class="about__description">Первый заём до 10 000 рублей выдается по ставке 0% в случае своевременного погашения; </p>
+              </li>
+              <li class="about__item"> 
+                <p class="about__description">Процентная ставка по займам от 30 до 360% годовых,</p>
+              </li>
+              <li class="about__item"> 
+                <p class="about__description">По потребительским кредитам и кредитным картам - от 17 до 31% годовых.</p>
+              </li>
+              <li class="about__item"> 
+                <p class="about__description">В случае нарушения сроков, размер неустойки составляет 0,10% от суммы просрочки в день, но не более 10% от суммы кредита; </p>
+              </li>
+              <li class="about__item"> 
+                <p class="about__description">В случае длительной задержки выплаты информация будет передана в БКИ</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about__text-box">
+            <h3 class="about__title">Информация о полной стоимости займа и пример расчета:</h3>
+            <p class="about__description">Заём в размере 10 000 рублей выдан на 61 дней с пролонгацией.</p>
+            <p class="about__description">
+               В году 365 дней, по договору ставка составляет 1% в день (годовая ставка, соответственно будет равна 365%). Сумма процентов за год составляет 36 500 руб. 
+              (10 000*365% = 36 500), за 1 день 100 руб. (36 500/365 = 100), за 61 дней соответственно 6 100 руб. (100*61 = 6100). Общая сумма платежа составляет 16 100 руб. 
+              (10 000 руб. основной долг + 6 100 руб. проценты).
+            </p>
+            <p class="about__description">ПСК (полная стоимость кредита) в процентах составляет 365% годовых</p>
+          </div>
+          <div class="about__text-box">
+            <h3 class="about__title">Последствия невыплаты заёмных средств:</h3>
+            <p class="about__description">
+               В случае невозвращения в условленный срок суммы кредита или суммы процентов за пользование заёмными средствами кредитор вынуждено начислит штраф за
+              просрочку платежа. Большинство кредиторов идут на уступки и дают 3 дополнительных рабочих дня для оплаты. Они предусмотрены на случай, к примеру, 
+              если банковский перевод занял больше времени, чем обычно. Однако, в случае неполучения от Вас какой-либо реакции в течение продолжительного времени, 
+              будет начислен штраф за просрочку срока погашения размером в среднем 0,10% от первоначальной суммы для займов, 0,03% от суммы задолженности в среднем 
+              для потребительских кредитов и кредитных карт. При несоблюдении Вами условий по погашению кредитов и займов, данные о Вас могут быть переданы в реестр должников, 
+              а задолженность - коллекторскому агентству для взыскания долга. О всех приближающихся сроках платежа кредитор своевременно информирует Вас по СМС или электронной почте. 
+              Рекомендуем Вам вносить платеж в день получения данных напоминаний. Погашая задолженность в срок, Вы формируете хорошую кредитную историю, что повышает Ваши шансы 
+              в дальнейшем получить кредит на более выгодных условиях. Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами.
+            </p>
+          </div><a class="about__link" href="#">Согласие на обработку персональных данных</a><a class="about__link" href="#">Отказ от рассылки рекламных материалов</a>
+        </div>
+      </section>
+      <footer class="footer"> 
+        <div class="footer__container"><a class="footer__main-link" href="#">
+              <div class="logo"><img class="logo__img" src="img/logo.svg" width="164" height="50" alt="Логотип Виза займ"></div></a>
+          <h3 class="footer__title">Сервис подбора займов</h3><span class="footer__cooperation">По вопросам сотрудничества: <a class="footer__mail-link" href="mailto:info@monebo.ru">info@monebo.ru</a></span>
+          <hr class="footer__line">
+          <p class="footer__description">
+             Владельцем товарного знака "Monebo" является ИП Карсаков А.А. (ИНН 631929844543), услуги по размещению информации на домене Monebo.ru оказывает ООО «ГИДФИНАНС» 
+            ОГРН 1166313147934
+          </p>
+          <p class="footer__description">ООО "Гидфинанс" ОГРН 1166313147934, КПП 631901001 | 443083, Самарская обл., Самара г, ул. Солнечная, д. 30, оф. 6.</p>
+          <p class="footer__description">
+            Находится в реестре операторов, осуществляющих обработку персональных данных, рег. № 77-19-014842, приказ №105 от 28.06.2019 г.
+            Данное соглашение действует бессрочно и может быть отозвано путем отправки заявления в свободной форме по email-адресу otkaz@monb.su с пометкой 
+            в теме «Отказ от сотрудничества».
+          </p>
+          <p class="footer__description">Сервис бесплатный - за предоставление информации комиссия не взымается. <br> ВАЖНО: предоплату берут только мошенники!</p>
+          <p class="footer__description">
+            Сайт НЕ является представительством МФО или банком, не осуществляет выдачу займов и кредитов. Все рекомендуемые на сайте 
+            кредитные учреждения имеют соответствующие лицензии. Условия неуплаты можно уточнить на сайте МФО.
+          </p>
+        </div>
+      </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
